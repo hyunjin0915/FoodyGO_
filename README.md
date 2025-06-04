@@ -1,2 +1,2 @@
-# FoodyGO_
-
+# FoodyGo
+AR Sample (pokemon-go like)
