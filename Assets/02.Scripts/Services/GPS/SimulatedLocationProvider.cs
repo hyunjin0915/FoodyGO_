@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using FoodyGo.Mapping;
 
 namespace FoodyGo.Services.GPS
 {
@@ -81,6 +82,10 @@ namespace FoodyGo.Services.GPS
 
             double newLatitude = startLocation.latitude + deltaLatitude;
             double newLongitude = startLocation.longitude + deltaLongitude;
+
+            latitude = newLatitude;
+            longitude = newLongitude;
+            altitude = 0f;
 
             onLocationUpdated?.Invoke(
                 newLatitude,
